@@ -1,0 +1,8 @@
+.cardCustomized {
+    background-color: rgb(231, 225, 225);
+    border-width: 100px;
+    display: inline-block;
+    margin: 20px;
+    padding:20px;
+    
+}

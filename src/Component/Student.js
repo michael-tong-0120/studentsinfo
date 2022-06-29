@@ -1,5 +1,7 @@
 import React from "react";
 import { Button, Row, Col, Card, Container } from "react-bootstrap";
+import "./Student.css";
+
 
 function Student() {
     const cardInfo = [
@@ -36,8 +38,8 @@ function Student() {
         <Row className="g-4">
             <Col> 
                 {cardInfo.map((_, idx) => (
-                  <React.Fragment>
-                    <Card key={idx} style={{ width: '40rem', display:"inline-block"}}>
+                  
+                    <Card className="cardCustomized" key={idx} style={{ width: '35rem'}}>
                         <Card.Img variant="top" src = {_.image}/>
                         <Card.Body>
                         <Card.Title>{_.name}</Card.Title>
@@ -45,7 +47,7 @@ function Student() {
                         <Button variant={_.name}>Grade</Button>
                         </Card.Body>
                     </Card>
-                    </React.Fragment>            
+                               
                 ))}
             </Col> 
         </Row>        
