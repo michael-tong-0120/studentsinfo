@@ -42,7 +42,7 @@ function Student() {
                     <Card className="cardCustomized" key={idx} style={{ width: '35rem'}}>
                         <Card.Img variant="top" src = {_.image}/>
                         <Card.Body>
-                        <Card.Title>{_.name}</Card.Title>
+                        <Card.Title><b>{_.name}</b></Card.Title>
                         <Card.Text>{_.gpa}</Card.Text>
                         <Button variant={_.name}>Grade</Button>
                         </Card.Body>

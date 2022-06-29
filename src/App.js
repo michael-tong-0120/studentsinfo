@@ -22,7 +22,7 @@ class App extends Component {
               <Link to="/contact">Contact Us</Link>
             </li>
             <li>
-              <Link to="/student">Students</Link>
+              <Link to="/student">Students List</Link>
             </li>
           </ul>
           <Routes>
