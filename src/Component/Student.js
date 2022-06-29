@@ -37,8 +37,8 @@ function Student() {
             <Col> 
                 {cardInfo.map((_, idx) => (
                   <React.Fragment>
-                    <Card border="20px" style={{ width: '40rem', display:"inline-block", borderWidth: "10px"}}>
-                        <Card.Img variant="top" src = {_.image} />
+                    <Card key={idx} style={{ width: '40rem', display:"inline-block"}}>
+                        <Card.Img variant="top" src = {_.image}/>
                         <Card.Body>
                         <Card.Title>{_.name}</Card.Title>
                         <Card.Text>{_.gpa}</Card.Text>
